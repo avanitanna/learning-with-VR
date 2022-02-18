@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: WitConfiguration
+  m_EditorClassIdentifier: 
+  application:
+    witConfiguration: {fileID: 0}
+    name: cs291a
+    id: 446281933849594
+    lang: en
+    isPrivate: 0
+    createdAt: 2022-02-03T12:11:19-0800
+  configId: 2ea22f9b4bc5d4559a4690523ed25a04
+  clientAccessToken: FY3N2H2JOARUPLK5YZE7CVVV3Z3OW4FI
+  timeoutMS: 10000
+  endpointConfiguration:
+    uriScheme: 
+    authority: 
+    port: 0
+    witApiVersion: 
+    speech: 
+    message: 
+  entities: []
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 624214711994108
+    name: wit$add_time_timer
+    entities: []
+  traits:
+  - witConfiguration: {fileID: 11400000}
+    id: 5900cc2d-41b7-45b2-b21f-b950d3ae3c5c
+    name: wit$greetings
+    values:
+    - id: 547401529279585
+      value: true
