@@ -33,10 +33,19 @@ namespace OpenAI_Unity
 
         public override int NumOutputs { get => 1; set => throw new NotImplementedException(); }
 
+        private float time = 0f;
+        public Text inputText;
+        private bool added = false;
 
-        private void ThrowError (string value)
+        private void ThrowError(string value)
         {
-            Debug.LogError($"Can not set OAICharacter variable to {value}! If you want to modify these please use an OAISimpleObject instead");
+            Debug.LogError(
+                $"Can not set OAICharacter variable to {value}! If you want to modify these please use an OAISimpleObject instead");
+        }
+
+        public void GetResponse()
+        {
+            AddToStory(inputText.text);
         }
 
     }
