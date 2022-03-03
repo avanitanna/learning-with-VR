@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39e4dc951779a3f4fa8eed710259f4c7, type: 3}
-  m_Name: Angry
+  m_Name: Depressed
   m_EditorClassIdentifier: 
-  Description: '[Subject] is very angry. [Subject] is enraged. [Subject] is hot headed.
-    [Subject] is very aggresive. [Subject] feels like ranting. [Subject] is trying
-    to make you angry.'
+  Description: '[Subject] is feeling low. [Subject] has had a breakup. [Subject]
+    wants to get to know your state of mind.'
