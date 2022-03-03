@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e4dc951779a3f4fa8eed710259f4c7, type: 3}
   m_Name: Sad
   m_EditorClassIdentifier: 
-  Description: '[Subject] is sad and sorrowful. [Subject] feels weak.[Subject] is
-    very depressed. [Subject] is trying to make you sad. [Subject] feels low. '
+  Description: '[Subject] is sad and melancholic. [Subject] has had a heartbreak.
+    [Subject] feels weak.[Subject] is very depressed. [Subject] is trying to make
+    you sad. [Subject] feels low. '
