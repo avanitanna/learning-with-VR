@@ -9,6 +9,8 @@ public class CharacterSelection : MonoBehaviour
     private int index; //default 0
     private void Start()
     {
+        // index = PlayerPrefs.GetInt("CharacterSelected");
+
         characterList = new GameObject[transform.childCount];
         
         //fill array with our models
@@ -23,7 +25,7 @@ public class CharacterSelection : MonoBehaviour
             go.SetActive(false);
         }
         
-        //we toggle on the first index
+        //we toggle on the selected index
         if(characterList[0])
             characterList[0].SetActive(true);
     }
@@ -48,5 +50,20 @@ public class CharacterSelection : MonoBehaviour
             index = 0;
         //toggle on the new model
         characterList[index].SetActive(true);
+    }
+
+    public void ConfirmButton() {
+        // index = PlayerPrefs.GetInt("CharacterSelected");
+        if (index == 0) {
+            SceneManager.LoadScene("angreyScene.unity");
+        } else if (index == 1) {
+            SceneManager.LoadScene("beachHappyScene.unity");
+        } else {
+            SceneManager.LoadScene("forestScene.unity");
+        }
+    }
+
+    public void BackButton() {
+        SceneManager.LoadScene("Scenes/CharacterWithSST");
     }
 }
