@@ -47,7 +47,7 @@ public class HandController : MonoBehaviour
             time = Time.time;
         }
 
-        if (backValue > 0.1f)
+        if (backValue > 0.1f || Input.GetKeyDown(KeyCode.B))
         {
             characterList.GetComponent<CharacterSelection>().BackButton();
         }
