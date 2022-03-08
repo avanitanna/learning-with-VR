@@ -523,7 +523,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 755220992}
-  - component: {fileID: 755220991}
   - component: {fileID: 755220993}
   m_Layer: 0
   m_Name: HandController
@@ -532,18 +531,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &755220991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755220990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b1c2527d87114a18b7dbed3914962d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &755220992
 Transform:
   m_ObjectHideFlags: 0
@@ -571,6 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionsHandler: {fileID: 67783517}
+  characterList: {fileID: 2065499791}
 --- !u!1 &1071017819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,7 +1746,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065499791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f197ada19d481524a9218f06aa5e36f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 97ab9fecfb61445d197389ca8c3a366d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2103667654

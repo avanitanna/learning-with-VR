@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 172056824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f197ada19d481524a9218f06aa5e36f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 97ab9fecfb61445d197389ca8c3a366d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &174059745
@@ -10335,7 +10335,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 935325127}
-  - component: {fileID: 935325129}
   - component: {fileID: 935325128}
   m_Layer: 0
   m_Name: HandController
@@ -10371,18 +10370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionsHandler: {fileID: 1032609694}
---- !u!114 &935325129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935325126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b1c2527d87114a18b7dbed3914962d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  characterList: {fileID: 172056824}
 --- !u!1 &937963275
 GameObject:
   m_ObjectHideFlags: 0

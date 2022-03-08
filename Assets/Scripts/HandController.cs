@@ -12,6 +12,7 @@ public class HandController : MonoBehaviour
     private float time = 0f;
     private bool active = false;
     public GameObject interactionsHandler;
+    public GameObject characterList;
     
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class HandController : MonoBehaviour
     void Update()
     {
         targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float enableValue);
+        targetDevice.TryGetFeatureValue(CommonUsages.grip, out float backValue);
         
         if ((enableValue > 0.1f && !active) || Input.GetKeyDown(KeyCode.M))
         {
@@ -42,6 +44,12 @@ public class HandController : MonoBehaviour
         if (active && (Time.time - time > 5f))
         {
             active = false;
+            time = Time.time;
+        }
+
+        if (backValue > 0.1f)
+        {
+            characterList.GetComponent<CharacterSelection>().BackButton();
         }
 
     }
