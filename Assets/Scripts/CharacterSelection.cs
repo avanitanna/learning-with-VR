@@ -55,11 +55,11 @@ public class CharacterSelection : MonoBehaviour
     public void ConfirmButton() {
         // index = PlayerPrefs.GetInt("CharacterSelected");
         if (index == 0) {
-            SceneManager.LoadScene("angreyScene.unity");
+            SceneManager.LoadScene("Scenes/AngryScene");
         } else if (index == 1) {
-            SceneManager.LoadScene("beachHappyScene.unity");
+            SceneManager.LoadScene("Scenes/HappyScene");
         } else {
-            SceneManager.LoadScene("forestScene.unity");
+            SceneManager.LoadScene("Scenes/ForestScene");
         }
     }
 
