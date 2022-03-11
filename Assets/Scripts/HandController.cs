@@ -34,23 +34,22 @@ public class HandController : MonoBehaviour
     {
         targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float enableValue);
         targetDevice.TryGetFeatureValue(CommonUsages.grip, out float backValue);
-        
+
         if ((enableValue > 0.1f && !active) || Input.GetKeyDown(KeyCode.M))
         {
             interactionsHandler.GetComponent<InteractionHandler>().ToggleActivation();
             active = true;
         }
-
-        if (active && (Time.time - time > 5f))
-        {
-            active = false;
-            time = Time.time;
-        }
-
+        
         if (backValue > 0.1f || Input.GetKeyDown(KeyCode.B))
         {
             characterList.GetComponent<CharacterSelection>().BackButton();
         }
 
+    }
+
+    public void NotActive()
+    {
+        active = false;
     }
 }
